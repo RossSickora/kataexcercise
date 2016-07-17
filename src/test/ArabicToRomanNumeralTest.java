@@ -45,5 +45,10 @@ public class ArabicToRomanNumeralTest {
 	public void arabicNineToRomanNumeralIXTest(){
 		assertEquals("IX", adapter.adapt(9));
 	}
+	
+	@Test
+	public void arabicTenToRomanNumeralXTest(){
+		assertEquals("X", adapter.adapt(10));
+	}
 
 }
