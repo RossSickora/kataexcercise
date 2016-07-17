@@ -75,5 +75,10 @@ public class ArabicToRomanNumeralTest {
 	public void arabicOneHundredToRomanNumeralCTest(){
 		assertEquals("C", adapter.adapt(100));
 	}
+	
+	@Test
+	public void arabicFourHundredToRomanNumeralCDTest(){
+		assertEquals("CD", adapter.adapt(400));
+	}
 
 }
