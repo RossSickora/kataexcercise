@@ -54,6 +54,7 @@ public class ArabicToNumeralAdapter {
 	private LinkedHashMap<Integer, String> initializeArabicToRomanMap() {
 		LinkedHashMap<Integer, String> aMapToInitialize = new LinkedHashMap<Integer, String>();
 		
+		aMapToInitialize.put(90, "XC");
 		aMapToInitialize.put(50, "L");
 		aMapToInitialize.put(40, "XL");
 		aMapToInitialize.put(10, "X");

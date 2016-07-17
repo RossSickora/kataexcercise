@@ -65,5 +65,11 @@ public class ArabicToRomanNumeralTest {
 	public void arabicFiftyToRomanNumeralLTest(){
 		assertEquals("L", adapter.adapt(50));
 	}
+	
+	@Test
+	public void arabicNinetyToRomanNumeralXCTest(){
+		assertEquals("XC", adapter.adapt(90));
+	}
+	
 
 }
