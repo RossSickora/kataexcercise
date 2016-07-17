@@ -9,7 +9,7 @@ import adapters.ArabicToNumeralAdapter;
 public class ArabicToRomanNumeralTest {
 
 	@Test
-	public void arabicToRomanNumeraltest() {
+	public void arabicOneToRomanNumeralOnetest() {
 		assertEquals("I", ArabicToNumeralAdapter.adapt(1));
 	}
 
