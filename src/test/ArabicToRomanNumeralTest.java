@@ -17,29 +17,33 @@ public class ArabicToRomanNumeralTest {
 	}
 	
 	@Test
-	public void arabicOneToRomanNumeralOneTest() {
+	public void arabicOneToRomanNumeralITest() {
 		assertEquals("I", adapter.adapt(1));
 	}
 	
 	@Test
-	public void arabicThreeToRomanNumeralThreeTest() {
+	public void arabicThreeToRomanNumeralIIITest() {
 		assertEquals("III", adapter.adapt(3));
 	}
 	
 	@Test
-	public void arabicFourToRomanNumeralFourTest() {
+	public void arabicFourToRomanNumeralIVTest() {
 		assertEquals("IV", adapter.adapt(4));
 	}
 	
 	@Test
-	public void arabicFiveToRomanNumeralFiveTest() {
+	public void arabicFiveToRomanNumeralVTest() {
 		assertEquals("V", adapter.adapt(5));
 	}
 	
 	@Test
-	public void arabicSixToRomanNumeralSixTest() {
+	public void arabicSixToRomanNumeralVITest() {
 		assertEquals("VI", adapter.adapt(6));
 	}
 	
+	@Test
+	public void arabicNineToRomanNumeralIXTest(){
+		assertEquals("IX", adapter.adapt(9));
+	}
 
 }

@@ -6,7 +6,7 @@ import java.util.Map;
 public class ArabicToNumeralAdapter {
 		
 	public String adapt(int valueToAdapt) {
-		LinkedHashMap<Integer, String> arabicToNumeralMap = initializeMap();
+		LinkedHashMap<Integer, String> arabicToNumeralMap = initializeArabicToRomanMap();
 		String adaptedValue = "";
 		for (Map.Entry<Integer, String> mapEntry : arabicToNumeralMap.entrySet()) {
 			
@@ -51,9 +51,10 @@ public class ArabicToNumeralAdapter {
  * converting to Roman Numerals
  * @return HashMap<Integer, String>
  */
-	private LinkedHashMap<Integer, String> initializeMap() {
+	private LinkedHashMap<Integer, String> initializeArabicToRomanMap() {
 		LinkedHashMap<Integer, String> aMapToInitialize = new LinkedHashMap<Integer, String>();
 		
+		aMapToInitialize.put(9, "IX");
 		aMapToInitialize.put(5, "V");
 		aMapToInitialize.put(4, "IV");
 		aMapToInitialize.put(1, "I");
