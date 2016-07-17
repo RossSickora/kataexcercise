@@ -95,5 +95,17 @@ public class ArabicToRomanNumeralTest {
 	public void arabicOneThousandToRomanNumeralMTest(){
 		assertEquals("M", adapter.adapt(1000));
 	}
+	
+	//final acceptance criteria for Feature:  Convert Arabic Number to Roman Numeral
+	
+	@Test
+	public void arabic1066ToMLXVI(){
+		assertEquals("MLXVI", adapter.adapt(1066));
+	}
+	
+	@Test
+	public void arabic1989ToMCMLXXXIX(){
+		assertEquals("MCMLXXXIX", adapter.adapt(1989));
+	}
 
 }
