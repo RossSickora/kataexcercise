@@ -23,8 +23,10 @@ public class ArabicToRomanNumeralTest {
 		assertEquals("IV", ArabicToNumeralAdapter.adapt(4));
 	}
 	
+	@Test
 	public void arabicFiveToRomanNumeralFiveTest() {
 		assertEquals("V", ArabicToNumeralAdapter.adapt(5));
 	}
+	
 
 }
