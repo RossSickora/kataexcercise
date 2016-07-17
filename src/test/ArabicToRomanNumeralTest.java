@@ -2,35 +2,43 @@ package test;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
-import adapters.ArabicToNumeralAdapter;
+import adapter.ArabicToNumeralAdapter;
 
 public class ArabicToRomanNumeralTest {
 
+	ArabicToNumeralAdapter adapter; 
+	
+	@Before
+	public void setUp(){
+		adapter = new ArabicToNumeralAdapter();
+	}
+	
 	@Test
 	public void arabicOneToRomanNumeralOneTest() {
-		assertEquals("I", ArabicToNumeralAdapter.adapt(1));
+		assertEquals("I", adapter.adapt(1));
 	}
 	
 	@Test
 	public void arabicThreeToRomanNumeralThreeTest() {
-		assertEquals("III", ArabicToNumeralAdapter.adapt(3));
+		assertEquals("III", adapter.adapt(3));
 	}
 	
 	@Test
 	public void arabicFourToRomanNumeralFourTest() {
-		assertEquals("IV", ArabicToNumeralAdapter.adapt(4));
+		assertEquals("IV", adapter.adapt(4));
 	}
 	
 	@Test
 	public void arabicFiveToRomanNumeralFiveTest() {
-		assertEquals("V", ArabicToNumeralAdapter.adapt(5));
+		assertEquals("V", adapter.adapt(5));
 	}
 	
 	@Test
 	public void arabicSixToRomanNumeralSixTest() {
-		assertEquals("VI", ArabicToNumeralAdapter.adapt(6));
+		assertEquals("VI", adapter.adapt(6));
 	}
 	
 
