@@ -11,7 +11,7 @@ public class ArabicToNumeralAdapter {
 		for (Map.Entry<Integer, String> mapEntry : arabicToNumeralMap.entrySet()) {
 			
 			int countOfMatches = valueToAdapt/mapEntry.getKey();
-			adaptedValue += addNumerals(countOfMatches, mapEntry.getValue());
+			adaptedValue += addNumeralsForEachcountOfMatches(countOfMatches, mapEntry.getValue());
 			//now we only need to populate numerals for the remainder
 			valueToAdapt = valueToAdapt % mapEntry.getKey();
 		}
@@ -34,7 +34,7 @@ public class ArabicToNumeralAdapter {
 	 * @param numeral
 	 * @return String
 	 */
-	private String addNumerals(int countOfMatches, String numeral) {
+	private String addNumeralsForEachcountOfMatches(int countOfMatches, String numeral) {
 	StringBuilder numeralsToReturn = new StringBuilder();
 	if(numeral == null){
 		return null;
@@ -54,6 +54,7 @@ public class ArabicToNumeralAdapter {
 	private LinkedHashMap<Integer, String> initializeArabicToRomanMap() {
 		LinkedHashMap<Integer, String> aMapToInitialize = new LinkedHashMap<Integer, String>();
 		
+		aMapToInitialize.put(50, "L");
 		aMapToInitialize.put(40, "XL");
 		aMapToInitialize.put(10, "X");
 		aMapToInitialize.put(9, "IX");
