@@ -85,5 +85,10 @@ public class ArabicToRomanNumeralTest {
 	public void arabicFiveHundredToRomanNumeralDTest(){
 		assertEquals("D", adapter.adapt(500));
 	}
+	
+	@Test
+	public void arabicNineHundredToRomanNumeralCMTest(){
+		assertEquals("CM", adapter.adapt(900));
+	}
 
 }
