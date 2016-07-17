@@ -9,8 +9,13 @@ import adapters.ArabicToNumeralAdapter;
 public class ArabicToRomanNumeralTest {
 
 	@Test
-	public void arabicOneToRomanNumeralOnetest() {
+	public void arabicOneToRomanNumeralOneTest() {
 		assertEquals("I", ArabicToNumeralAdapter.adapt(1));
+	}
+	
+	@Test
+	public void arabicThreeToRomanNumeralThreeTest() {
+		assertEquals("III", ArabicToNumeralAdapter.adapt(3));
 	}
 
 }
