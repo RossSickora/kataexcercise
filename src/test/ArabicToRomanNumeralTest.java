@@ -17,5 +17,10 @@ public class ArabicToRomanNumeralTest {
 	public void arabicThreeToRomanNumeralThreeTest() {
 		assertEquals("III", ArabicToNumeralAdapter.adapt(3));
 	}
+	
+	@Test
+	public void arabicFourToRomanNumeralFourTest() {
+		assertEquals("IV", ArabicToNumeralAdapter.adapt(4));
+	}
 
 }
