@@ -9,7 +9,17 @@ public class ArabicToNumeralAdapter {
 				anAdaptedValue = anAdaptedValue.concat("I");
 			}
 			else{
-				anAdaptedValue = "IV";
+				switch (valueToAdapt) {
+				case 4:
+					anAdaptedValue = "IV";
+					break;
+				case 5:
+					anAdaptedValue = "V";
+					break;
+
+				default:
+					break;
+				}
 			}
 			
 		}

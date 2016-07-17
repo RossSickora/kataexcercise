@@ -22,5 +22,9 @@ public class ArabicToRomanNumeralTest {
 	public void arabicFourToRomanNumeralFourTest() {
 		assertEquals("IV", ArabicToNumeralAdapter.adapt(4));
 	}
+	
+	public void arabicFiveToRomanNumeralFiveTest() {
+		assertEquals("V", ArabicToNumeralAdapter.adapt(5));
+	}
 
 }
