@@ -16,7 +16,9 @@ public class ArabicToNumeralAdapter {
 				case 5:
 					anAdaptedValue = "V";
 					break;
-
+				case 6:
+					anAdaptedValue = "VI";
+					break;
 				default:
 					break;
 				}

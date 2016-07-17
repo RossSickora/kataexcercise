@@ -28,5 +28,10 @@ public class ArabicToRomanNumeralTest {
 		assertEquals("V", ArabicToNumeralAdapter.adapt(5));
 	}
 	
+	@Test
+	public void arabicSixToRomanNumeralSixTest() {
+		assertEquals("VI", ArabicToNumeralAdapter.adapt(6));
+	}
+	
 
 }
