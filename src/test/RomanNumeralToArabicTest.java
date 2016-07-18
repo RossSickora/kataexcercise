@@ -18,6 +18,9 @@ public class RomanNumeralToArabicTest {
 		assertEquals(1 ,new NumeralToArabicAdapter().adapt("I"));
 	}
 	
-	
+	@Test
+	public void IIITo3Test() {
+		assertEquals(3 ,new NumeralToArabicAdapter().adapt("III"));
+	}
 
 }
