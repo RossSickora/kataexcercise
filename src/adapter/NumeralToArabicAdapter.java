@@ -5,17 +5,30 @@ import java.util.LinkedHashMap;
 public class NumeralToArabicAdapter {
 
 	public int adapt(String numeral) {
-		LinkedHashMap<String, Integer> numeralToArabicMap = initializeRomanToArabicMap();
-		return numeralToArabicMap.get(numeral);
+		LinkedHashMap<Character, Integer> numeralToArabicMap = initializeRomanToArabicMap();
+		int arabicValue = 0;
+		int previousValue = 0;
+		for(int characterIndex = numeral.length()-1; characterIndex >= 0 ; characterIndex--){
+			char currentCharacter = numeral.charAt(characterIndex);
+			int tempValue = numeralToArabicMap.get(currentCharacter);
+			if(tempValue < previousValue){
+				arabicValue = arabicValue-tempValue;
+			}
+			else{
+				arabicValue = arabicValue + tempValue;
+			}
+			previousValue = tempValue;
+		}
+		return arabicValue;
 	}
 	
 	
-	private LinkedHashMap<String, Integer> initializeRomanToArabicMap() {
-		LinkedHashMap<String, Integer> aMapToInitialize = new LinkedHashMap<String, Integer>();
 		
-		aMapToInitialize.put("IV", 4);
-		aMapToInitialize.put("III", 3);
-		aMapToInitialize.put("I", 1);
+	private LinkedHashMap<Character, Integer> initializeRomanToArabicMap() {
+		LinkedHashMap<Character, Integer> aMapToInitialize = new LinkedHashMap<Character, Integer>();
+		
+		aMapToInitialize.put('V', 5);
+		aMapToInitialize.put('I', 1);
 		
 		return aMapToInitialize;
 	}
