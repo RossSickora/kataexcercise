@@ -27,5 +27,12 @@ public class RomanNumeralToArabicTest {
 	public void IVTo4Test(){
 		assertEquals(4 ,new NumeralToArabicAdapter().adapt("IV"));
 	}
+	
+	@Test
+	public void VTo5Test(){
+		assertEquals(5 ,new NumeralToArabicAdapter().adapt("V"));
+	}
+	
+	
 
 }
