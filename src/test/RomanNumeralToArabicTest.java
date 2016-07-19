@@ -33,6 +33,9 @@ public class RomanNumeralToArabicTest {
 		assertEquals(5 ,new NumeralToArabicAdapter().adapt("V"));
 	}
 	
-	
+	@Test
+	public void VITo6Test(){
+		assertEquals(6 ,new NumeralToArabicAdapter().adapt("VI"));
+	}
 
 }
