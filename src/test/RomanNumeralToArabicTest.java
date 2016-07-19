@@ -22,5 +22,10 @@ public class RomanNumeralToArabicTest {
 	public void IIITo3Test() {
 		assertEquals(3 ,new NumeralToArabicAdapter().adapt("III"));
 	}
+	
+	@Test
+	public void IVTo4Test(){
+		assertEquals(4 ,new NumeralToArabicAdapter().adapt("IV"));
+	}
 
 }
