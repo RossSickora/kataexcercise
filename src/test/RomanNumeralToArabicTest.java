@@ -69,6 +69,16 @@ public class RomanNumeralToArabicTest {
 	}
 	
 	@Test
+	public void CDTo400Test(){
+		assertEquals(400 ,new NumeralToArabicAdapter().adapt("CD"));
+	}
+
+	@Test
+	public void DTo500Test(){
+		assertEquals(500 ,new NumeralToArabicAdapter().adapt("D"));
+	}
+	
+	@Test
 	public void CMTo900Test(){
 		assertEquals(900 ,new NumeralToArabicAdapter().adapt("CM"));
 	}
