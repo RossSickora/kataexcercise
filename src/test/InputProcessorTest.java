@@ -17,11 +17,30 @@ public class InputProcessorTest {
 	}
 
 	@Test
-	public void applicationGracefulExitTest() {
+	public void processGracefulExitTest() {
 		StringWriter writableOutput = new StringWriter();
-		new InputProcessor().process(new PrintWriter(writableOutput));
+		new InputProcessor().process("", new PrintWriter(writableOutput));
 		
 		assertEquals("Application Terminated", writableOutput.toString());
 	}
+	
+	@Test
+	public void processReturnValidArabicInputTranslatedToNumeralOutpuTest() {
+		StringWriter writableOutput = new StringWriter();
+		String testInput = "5";
+		new InputProcessor().process(testInput, new PrintWriter(writableOutput));
+		
+		assertEquals("V\nApplication Terminated", writableOutput.toString());
+	}
+	
+	@Test
+	public void processReturnValidNumeralInputTranslatedToArabicOutpuTest() {
+		StringWriter writableOutput = new StringWriter();
+		String testInput = "V";
+		new InputProcessor().process(testInput, new PrintWriter(writableOutput));
+		
+		assertEquals("5\nApplication Terminated", writableOutput.toString());
+	}
+
 
 }
