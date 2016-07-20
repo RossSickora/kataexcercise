@@ -67,5 +67,16 @@ public class RomanNumeralToArabicTest {
 	public void CTo100Test(){
 		assertEquals(100 ,new NumeralToArabicAdapter().adapt("C"));
 	}
+	
+	@Test
+	public void CMTo900Test(){
+		assertEquals(900 ,new NumeralToArabicAdapter().adapt("CM"));
+	}
+
+	@Test
+	public void MTo1000Test(){
+		assertEquals(1000 ,new NumeralToArabicAdapter().adapt("M"));
+	}
+
 
 }
