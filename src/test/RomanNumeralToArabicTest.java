@@ -57,5 +57,15 @@ public class RomanNumeralToArabicTest {
 	public void LTo50Test(){
 		assertEquals(50 ,new NumeralToArabicAdapter().adapt("L"));
 	}
+	
+	@Test
+	public void XCTo90Test(){
+		assertEquals(90 ,new NumeralToArabicAdapter().adapt("XC"));
+	}
+
+	@Test
+	public void CTo100Test(){
+		assertEquals(100 ,new NumeralToArabicAdapter().adapt("C"));
+	}
 
 }

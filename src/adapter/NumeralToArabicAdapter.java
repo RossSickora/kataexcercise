@@ -27,6 +27,7 @@ public class NumeralToArabicAdapter {
 	private LinkedHashMap<Character, Integer> initializeRomanToArabicMap() {
 		LinkedHashMap<Character, Integer> aMapToInitialize = new LinkedHashMap<Character, Integer>();
 		
+		aMapToInitialize.put('C', 100);
 		aMapToInitialize.put('L', 50);
 		aMapToInitialize.put('X', 10);
 		aMapToInitialize.put('V', 5);
