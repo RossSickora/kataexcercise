@@ -37,5 +37,15 @@ public class RomanNumeralToArabicTest {
 	public void VITo6Test(){
 		assertEquals(6 ,new NumeralToArabicAdapter().adapt("VI"));
 	}
+	
+	@Test
+	public void IXTo9Test(){
+		assertEquals(9 ,new NumeralToArabicAdapter().adapt("IX"));
+	}
+	
+	@Test
+	public void XTo10Test(){
+		assertEquals(10 ,new NumeralToArabicAdapter().adapt("X"));
+	}
 
 }
