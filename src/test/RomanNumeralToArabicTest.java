@@ -48,4 +48,14 @@ public class RomanNumeralToArabicTest {
 		assertEquals(10 ,new NumeralToArabicAdapter().adapt("X"));
 	}
 
+	@Test
+	public void XLTo40Test(){
+		assertEquals(40 ,new NumeralToArabicAdapter().adapt("XL"));
+	}
+
+	@Test
+	public void LTo50Test(){
+		assertEquals(50 ,new NumeralToArabicAdapter().adapt("L"));
+	}
+
 }
